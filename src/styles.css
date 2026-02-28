@@ -4,7 +4,6 @@
   --card: #ffffff;
   --text: #1f2937;
   --muted: #4b5563;
-  --accent: #ef4444;
 }
 
 * {
@@ -59,10 +58,46 @@ h2 {
   display: inline-block;
   font-size: 0.82rem;
   color: white;
-  background: var(--accent);
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   margin-bottom: 0.7rem;
+}
+
+/* Color por tipo principal. */
+.tag--agua {
+  background: #1d4ed8;
+}
+
+.tag--fuego {
+  background: #ea580c;
+}
+
+.tag--planta {
+  background: #16a34a;
+}
+
+.tag--veneno {
+  background: #9333ea;
+}
+
+.tag--lucha {
+  background: #9a3412;
+}
+
+.tag--acero {
+  background: #475569;
+}
+
+.tag--dragon {
+  background: #0f766e;
+}
+
+.tag--fantasma {
+  background: #6d28d9;
+}
+
+.tag--default {
+  background: #374151;
 }
 
 .meta {
