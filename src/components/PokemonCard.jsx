@@ -18,6 +18,14 @@ export default function PokemonCard({ pokemon }) {
 
   return (
     <article className="card">
+      {/* Si no hay URL de imagen, mostramos un placeholder para mantener layout. */}
+      {pokemon.imagen ? (
+        <img className="pokemon-image" src={pokemon.imagen} alt={`Imagen de ${pokemon.nombre}`} />
+      ) : (
+        <div className="pokemon-image pokemon-image--placeholder" aria-hidden="true">
+          Sin imagen
+        </div>
+      )}
       <h2>{pokemon.nombre}</h2>
       <div className={`tag ${typeClass}`}>{pokemon.tipo}</div>
       <p>{pokemon.descripcion}</p>
